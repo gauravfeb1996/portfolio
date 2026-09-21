@@ -1,0 +1,37 @@
+.arch-lines>path{stroke:var(--brevo)!important;stroke-width:1.7!important;fill:none!important}
+
+.arch-lines marker path{fill:var(--brevo)!important;stroke:none!important}
+
+.arch-lines{z-index:2}
+
+.arch-group,.arch-core{z-index:3!important}
+
+.architecture{position:relative!important;overflow:hidden}
+
+.arch-group,.arch-core{position:relative;z-index:1}
+
+.arch-lines{position:absolute;inset:25px 0;width:100%;height:calc(100% - 50px);pointer-events:none}
+
+.arch-lines path{stroke:var(--brevo);stroke-width:1.5;fill:none}
+
+.arch-lines .arch-arrow{fill:var(--brevo);stroke:none}
+
+.arch-core{display:flex;align-items:center;justify-content:center}
+
+@media (max-width:768px){.architecture{grid-template-columns:minmax(0,1fr) 120px minmax(0,1fr)!important;gap:8px!important;padding:16px 10px!important}.architecture .arch-group{gap:5px!important}.architecture span{font-size:8px!important;padding:7px 3px!important}.architecture strong{font-size:10px!important;padding:11px 3px!important}.architecture strong svg{font-size:28px!important}.arch-lines{inset:20px 0!important;height:calc(100% - 40px)!important}}
+
+@media(max-width:460px){.architecture{grid-template-columns:1fr!important}.arch-lines{display:none}.architecture .arch-group{grid-template-columns:1fr 1fr;display:grid}.architecture .arch-core{order:-1}}
+
+.architecture{margin-top:24px;border:1px solid var(--line);border-radius:var(--radius-md);background:var(--surface);min-height:220px;box-shadow:var(--shadow-sm)}
+
+.architecture{display:grid;grid-template-columns:1fr 130px 1fr;gap:20px;align-items:center;padding:25px;color:var(--brevo)}
+
+.architecture>div{display:grid;gap:7px}
+
+.architecture span{border:1px solid var(--brevo);padding:8px;border-radius:5px;text-align:center;font-size:10px}
+
+.architecture strong{border:1px solid var(--brevo);padding:16px 8px;border-radius:8px;text-align:center;color:var(--ink);font-size:12px}
+
+.architecture strong svg{font-size:38px;display:block;margin:auto;color:var(--brevo)}
+
+@media(max-width:768px){.architecture{margin-top:28px;min-height:200px;grid-template-columns:1fr;gap:10px;padding:15px}.architecture strong{order:-1}}

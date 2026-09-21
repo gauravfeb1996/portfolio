@@ -1,0 +1,35 @@
+[data-theme=dark] .spinny-logo{filter:brightness(0) invert(1)!important;opacity:.96!important}
+
+[data-theme=dark] .case .spinny-logo{filter:brightness(0) invert(1)!important;opacity:1!important}
+
+html[data-theme=dark] body .case .company .spinny-logo{filter:brightness(2.7) saturate(1.7) contrast(1.1) drop-shadow(0 1px 1px rgba(255,255,255,.42))!important}
+
+[data-theme=dark] .spinny-logo,.spinny-logo{mix-blend-mode:normal!important;filter:none!important}
+
+[data-theme=dark] .spinny-logo{filter:brightness(2.1) saturate(1.6)}
+
+.spinny-logo{mix-blend-mode:multiply}
+
+.spinny-logo{width:112px!important;height:32px!important;max-width:none!important;object-fit:cover!important}
+
+.company{left:0!important;right:auto!important;top:0!important;height:30px;display:flex;align-items:center}
+
+.brand-logo{display:block;object-fit:contain;object-position:left center;max-width:128px;height:28px;width:auto}
+
+.spinny-logo{max-width:112px}
+
+.brevo-logo{max-width:102px}
+
+.doprep-lockup{display:flex;align-items:center;gap:7px;color:var(--doprep);font-weight:700;font-size:20px;letter-spacing:-.04em}
+
+.doprep-lockup svg{font-size:24px}
+
+@media(max-width:768px){.brand-logo{height:24px;max-width:102px}.doprep-lockup{font-size:18px}}
+
+.company{position:absolute;top:0;right:14px;font-size:21px;font-style:italic}
+
+.spinny .company{color:var(--spinny)}
+
+.brevo .company{color:var(--brevo)}
+
+.doprep .company{color:var(--doprep)}

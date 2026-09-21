@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display:ital@0;1&family=Patrick+Hand&display=swap');
+
+
+html,body{max-width:100%!important;overflow-x:hidden!important}
+
+:root{--bg:#F7F8FA;--surface:#fff;--surface-soft:#F1F5F9;--ink:#0B1B3E;--ink-muted:#51627D;--line:#D9E2EE;--hero:#071A3B;--hero-2:#0B2452;--hero-ink:#F8FBFF;--blue:#246BFD;--blue-soft:#EAF1FF;--teal:#00A98F;--teal-soft:#E5F8F3;--spinny:#E9294F;--spinny-soft:#FFF0F3;--brevo:#00A98F;--brevo-soft:#E8FAF5;--doprep:#4169E1;--doprep-soft:#EEF2FF;--whatsapp:#20B969;--coral:#F26C5B;--shadow-sm:0 8px 24px rgba(11,27,62,.08);--radius-md:14px;--tech-dark:#111}
+
+[data-theme=dark]{--bg:#071224;--surface:#0B1B35;--surface-soft:#102544;--ink:#F5F8FF;--ink-muted:#B6C4DB;--line:#25405F;--hero:#06132A;--hero-2:#0A2045;--blue-soft:#112B5B;--teal-soft:#093C38;--spinny-soft:#3A1522;--brevo-soft:#083D36;--doprep-soft:#162451;--tech-dark:#fff}
+
+*{box-sizing:border-box}
+
+html{scroll-behavior:smooth}
+
+body{margin:0;min-width:320px;background:var(--bg);color:var(--ink);font-family:'DM Sans',sans-serif}
+
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important}}

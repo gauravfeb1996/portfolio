@@ -1,0 +1,11 @@
+.case-meta .label{background:#0B1B3E!important;color:#fff!important}
+
+.label{display:block;font:500 10px/1.2 'DM Mono';text-transform:uppercase;letter-spacing:.08em;color:var(--ink-muted)}
+
+.hero .label{color:#9bb8ff}
+
+.metrics .label{color:var(--ink-muted)}
+
+.case-meta .label{background:var(--ink);color:#fff;padding:4px 6px;border-radius:4px;white-space:nowrap}
+
+.contact .label{color:#9bb8ff}

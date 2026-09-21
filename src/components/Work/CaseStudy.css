@@ -1,0 +1,23 @@
+.case-visual{padding-top:44px!important}
+
+.handwritten{top:4px!important;right:0!important;max-width:125px}
+
+@media(max-width:768px){.case-visual{padding-top:38px!important}.handwritten{top:2px!important;right:0!important;max-width:118px}}
+
+.case{padding:60px 0;display:grid;grid-template-columns:minmax(280px,.9fr) minmax(490px,1.1fr);gap:clamp(34px,5vw,76px);align-items:center;border-bottom:1px solid var(--line)}
+
+.case h2{margin:8px 0}
+
+.case p{font-size:15px;margin:10px 0 15px}
+
+.case-visual{position:relative;padding-top:24px}
+
+.handwritten{position:absolute;right:0;top:20px;max-width:132px;font:22px/1.04 'Patrick Hand';transform:rotate(-6deg);z-index:2}
+
+.spinny .handwritten{color:var(--spinny)}
+
+.brevo .handwritten{color:var(--brevo)}
+
+.product{margin-top:24px;border:1px solid var(--line);border-radius:var(--radius-md);background:var(--surface);min-height:220px;box-shadow:var(--shadow-sm)}
+
+@media(max-width:768px){.case{padding:48px 0;grid-template-columns:1fr;gap:20px}.case-copy{order:1}.case-visual{order:2}.handwritten{top:2px;font-size:20px}.product{margin-top:28px;min-height:200px}}

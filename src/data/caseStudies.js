@@ -1,8 +1,8 @@
-import { SpinnyCatalogue } from '../components/SpinnyCatalogue.jsx';
-import { Automation } from '../components/Automation.jsx';
-import { Phones } from '../components/Phones.jsx';
-import { Architecture } from '../components/Architecture.jsx';
-import { DoPrep } from '../components/DoPrep.jsx';
+import { SpinnyCatalogue } from '../components/Work/SpinnyCatalogue.jsx';
+import { Automation } from '../components/Work/Automation.jsx';
+import { Phones } from '../components/Work/Phones.jsx';
+import { Architecture } from '../components/Work/Architecture.jsx';
+import { DoPrep } from '../components/Work/DoPrep.jsx';
 
 export const caseStudies = [
   [

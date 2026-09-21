@@ -1,0 +1,9 @@
+.pill{font-size:8px;padding:4px 7px;border-radius:4px}
+
+.pill.green{color:#008a62;background:#daf7e9}
+
+.pill.blue{color:#1864c7;background:#e2f0ff}
+
+.pill.coral{color:#ce3a2c;background:#ffe4df}
+
+@media(max-width:768px){.pill{font-size:6px;padding:3px}}
