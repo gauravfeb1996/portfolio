@@ -10,7 +10,8 @@
 }
 
 .arch-lines {
-  z-index: 2;
+  /* The connector layer sits over card edges so triangle tips stay intact. */
+  z-index: 4;
 }
 
 .arch-group,
@@ -192,11 +193,7 @@
     padding: 16px 4% !important;
   }
 
-  .architecture .arch-lines:not(.arch-lines-mobile) {
-    display: none !important;
-  }
-
-  .architecture .arch-lines-mobile {
+  .architecture .arch-lines-dynamic {
     display: block !important;
   }
 }
