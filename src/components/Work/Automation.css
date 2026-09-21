@@ -1,57 +1,240 @@
-.automation{isolation:isolate!important}
+.automation {
+  isolation: isolate !important;
+}
 
-.auto-flow-lines{position:absolute!important;inset:0!important;width:100%!important;height:100%!important;pointer-events:none!important;z-index:1!important;overflow:visible!important}
+.auto-flow-lines {
+  position: absolute !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  pointer-events: none !important;
+  z-index: 1 !important;
+  overflow: visible !important;
+}
 
-.auto-flow-lines path{fill:none!important;stroke:var(--teal)!important;stroke-width:1.7!important}
+.auto-flow-lines path {
+  fill: none !important;
+  stroke: var(--teal) !important;
+  stroke-width: 1.7 !important;
+}
 
-.auto-flow-lines marker path{fill:var(--teal)!important;stroke:none!important}
+.auto-flow-lines marker path {
+  fill: var(--teal) !important;
+  stroke: none !important;
+}
 
-.automation>.auto-node,.automation>.auto-arrow,.auto-branches{position:relative!important;z-index:2!important}
+.automation > .auto-node,
+.automation > .auto-arrow,
+.auto-branches {
+  position: relative !important;
+  z-index: 2 !important;
+}
 
-.auto-branches{padding-left:0!important}
+.auto-branches {
+  padding-left: 0 !important;
+}
 
-.auto-branches::before,.auto-branch>i{display:none!important}
+.auto-branches::before,
+.auto-branch > i {
+  display: none !important;
+}
 
-.automation>i.auto-arrow{color:transparent!important}
+.automation > i.auto-arrow {
+  color: transparent !important;
+}
 
-.automation>.auto-arrow{position:relative!important;align-self:center!important;width:56px!important;height:2px!important;margin-left:-14px!important;margin-right:-14px!important;font-size:0!important;background:var(--teal)!important}
+.automation > .auto-arrow {
+  position: relative !important;
+  align-self: center !important;
+  width: 56px !important;
+  height: 2px !important;
+  margin-left: -14px !important;
+  margin-right: -14px !important;
+  font-size: 0 !important;
+  background: var(--teal) !important;
+}
 
-.automation>.auto-arrow::after{content:''!important;position:absolute!important;right:-1px!important;top:50%!important;width:8px!important;height:8px!important;border-top:2px solid var(--teal)!important;border-right:2px solid var(--teal)!important;transform:translateY(-50%) rotate(45deg)!important}
+.automation > .auto-arrow::after {
+  content: "" !important;
+  position: absolute !important;
+  right: -1px !important;
+  top: 50% !important;
+  width: 8px !important;
+  height: 8px !important;
+  border-top: 2px solid var(--teal) !important;
+  border-right: 2px solid var(--teal) !important;
+  transform: translateY(-50%) rotate(45deg) !important;
+}
 
-@media(max-width:768px){.auto-flow-lines{display:block!important}}
+@media (max-width: 768px) {
+  .auto-flow-lines {
+    display: block !important;
+  }
+}
 
-@media(max-width:768px){.automation>.auto-arrow{width:36px!important;margin-left:-8px!important;margin-right:-8px!important}.automation>.auto-arrow::after{width:6px!important;height:6px!important}}
+@media (max-width: 768px) {
+  .automation > .auto-arrow {
+    width: 36px !important;
+    margin-left: -8px !important;
+    margin-right: -8px !important;
+  }
+  .automation > .auto-arrow::after {
+    width: 6px !important;
+    height: 6px !important;
+  }
+}
 
-.automation{position:relative!important;gap:14px!important}
+.automation {
+  position: relative !important;
+  gap: 14px !important;
+}
 
-.automation>.auto-arrow{font-style:normal!important;font-size:24px!important;color:var(--teal)!important;flex:none!important}
+.automation > .auto-arrow {
+  font-style: normal !important;
+  font-size: 24px !important;
+  color: var(--teal) !important;
+  flex: none !important;
+}
 
-.auto-branches{position:relative!important;display:grid!important;gap:9px!important;padding-left:28px!important}
+.auto-branches {
+  position: relative !important;
+  display: grid !important;
+  gap: 9px !important;
+  padding-left: 28px !important;
+}
 
-.auto-branches::before{content:''!important;position:absolute!important;left:5px!important;top:17px!important;bottom:17px!important;border-left:1.5px solid var(--teal)!important}
+.auto-branches::before {
+  content: "" !important;
+  position: absolute !important;
+  left: 5px !important;
+  top: 17px !important;
+  bottom: 17px !important;
+  border-left: 1.5px solid var(--teal) !important;
+}
 
-.auto-branch{position:relative!important;display:flex!important;align-items:center!important;gap:7px!important}
+.auto-branch {
+  position: relative !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 7px !important;
+}
 
-.auto-branch>i{width:20px!important;margin-left:-28px!important;font:20px/1 'DM Sans',sans-serif!important;color:var(--teal)!important;text-align:center!important;z-index:1!important}
+.auto-branch > i {
+  width: 20px !important;
+  margin-left: -28px !important;
+  font:
+    20px/1 "DM Sans",
+    sans-serif !important;
+  color: var(--teal) !important;
+  text-align: center !important;
+  z-index: 1 !important;
+}
 
-.auto-branch .auto-node{min-width:110px!important}
+.auto-branch .auto-node {
+  min-width: 110px !important;
+}
 
-@media(max-width:768px){.automation{gap:8px!important;padding:14px 8px!important}.automation>.auto-arrow{font-size:18px!important}.auto-branches{padding-left:21px!important;gap:7px!important}.auto-branches::before{left:4px!important;top:13px!important;bottom:13px!important}.auto-branch{gap:4px!important}.auto-branch>i{width:16px!important;margin-left:-21px!important;font-size:15px!important}.auto-branch .auto-node{min-width:0!important}}
+@media (max-width: 768px) {
+  .automation {
+    gap: 8px !important;
+    padding: 14px 8px !important;
+  }
+  .automation > .auto-arrow {
+    font-size: 18px !important;
+  }
+  .auto-branches {
+    padding-left: 21px !important;
+    gap: 7px !important;
+  }
+  .auto-branches::before {
+    left: 4px !important;
+    top: 13px !important;
+    bottom: 13px !important;
+  }
+  .auto-branch {
+    gap: 4px !important;
+  }
+  .auto-branch > i {
+    width: 16px !important;
+    margin-left: -21px !important;
+    font-size: 15px !important;
+  }
+  .auto-branch .auto-node {
+    min-width: 0 !important;
+  }
+}
 
-.automation{margin-top:24px;border:1px solid var(--line);border-radius:var(--radius-md);background:var(--surface);min-height:220px;box-shadow:var(--shadow-sm)}
+.automation {
+  margin-top: 24px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  background: var(--surface);
+  min-height: 220px;
+  box-shadow: var(--shadow-sm);
+}
 
-.automation{display:flex;justify-content:center;align-items:center;gap:14px;padding:22px;color:var(--teal)}
+.automation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  padding: 22px;
+  color: var(--teal);
+}
 
-.automation>i{font-style:normal;font-size:24px}
+.automation > i {
+  font-style: normal;
+  font-size: 24px;
+}
 
-.auto-node{min-width:110px;border:1px solid var(--teal);padding:11px 8px;border-radius:8px;text-align:center;background:var(--surface);font-size:10px;display:flex;align-items:center;gap:7px}
+.auto-node {
+  min-width: 110px;
+  border: 1px solid var(--teal);
+  padding: 11px 8px;
+  border-radius: 8px;
+  text-align: center;
+  background: var(--surface);
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
 
-.auto-node svg{font-size:25px}
+.auto-node svg {
+  font-size: 25px;
+}
 
-.auto-node.whats svg{color:var(--whatsapp)}
+.auto-node.whats svg {
+  color: var(--whatsapp);
+}
 
-.auto-node.coral{color:var(--coral);border-color:var(--coral)}
+.auto-node.coral {
+  color: var(--coral);
+  border-color: var(--coral);
+}
 
-.auto-branches{display:flex;flex-direction:column;gap:9px}
+.auto-branches {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
 
-@media(max-width:768px){.automation{margin-top:28px;min-height:200px;gap:7px;padding:12px}.auto-node{min-width:70px;padding:7px 4px;font-size:7px}.auto-node svg{font-size:18px}.automation>i{font-size:15px}}
+@media (max-width: 768px) {
+  .automation {
+    margin-top: 28px;
+    min-height: 200px;
+    gap: 7px;
+    padding: 12px;
+  }
+  .auto-node {
+    min-width: 70px;
+    padding: 7px 4px;
+    font-size: 7px;
+  }
+  .auto-node svg {
+    font-size: 18px;
+  }
+  .automation > i {
+    font-size: 15px;
+  }
+}

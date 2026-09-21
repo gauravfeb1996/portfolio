@@ -1,31 +1,95 @@
-.doprep.case{align-items:start!important}
+.doprep.case {
+  align-items: start !important;
+}
 
-.doprep .case-visual{padding-top:44px!important}
+.doprep .case-visual {
+  padding-top: 44px !important;
+}
 
-@media(min-width:769px){.case.doprep{grid-template-columns:minmax(330px,.92fr) minmax(490px,1.08fr)!important}.case.doprep .case-copy{padding-top:14px}}
+@media (min-width: 769px) {
+  .case.doprep {
+    grid-template-columns: minmax(330px, 0.92fr) minmax(490px, 1.08fr) !important;
+  }
+  .case.doprep .case-copy {
+    padding-top: 14px;
+  }
+}
 
-.doprep .handwritten{color:var(--doprep)}
+.doprep .handwritten {
+  color: var(--doprep);
+}
 
-.doprep{display:grid;grid-template-columns:135px 1fr;overflow:hidden}
+.doprep {
+  display: grid;
+  grid-template-columns: 135px 1fr;
+  overflow: hidden;
+}
 
-.doprep aside{padding:16px 10px;display:flex;flex-direction:column;gap:11px;font-size:10px;background:var(--surface-soft)}
+.doprep aside {
+  padding: 16px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+  font-size: 10px;
+  background: var(--surface-soft);
+}
 
-.doprep aside .active{background:#dfe4ff;padding:5px;border-radius:4px;color:var(--doprep)}
+.doprep aside .active {
+  background: #dfe4ff;
+  padding: 5px;
+  border-radius: 4px;
+  color: var(--doprep);
+}
 
-.doprep main{padding:18px;font-size:12px}
+.doprep main {
+  padding: 18px;
+  font-size: 12px;
+}
 
-.practice{display:flex;gap:8px;margin:12px 0}
+.practice {
+  display: flex;
+  gap: 8px;
+  margin: 12px 0;
+}
 
-.practice>div{flex:1;border:1px solid var(--line);padding:8px;font-size:9px}
+.practice > div {
+  flex: 1;
+  border: 1px solid var(--line);
+  padding: 8px;
+  font-size: 9px;
+}
 
-.practice svg{color:var(--doprep);font-size:18px;display:block}
+.practice svg {
+  color: var(--doprep);
+  font-size: 18px;
+  display: block;
+}
 
-.practice b,.practice small{display:block}
+.practice b,
+.practice small {
+  display: block;
+}
 
-.practice small{color:var(--ink-muted);font-size:8px}
+.practice small {
+  color: var(--ink-muted);
+  font-size: 8px;
+}
 
-.doprep main p{font-size:10px;margin-bottom:5px}
+.doprep main p {
+  font-size: 10px;
+  margin-bottom: 5px;
+}
 
-.progress{height:7px;background:var(--line);border-radius:9px}
+.progress {
+  height: 7px;
+  background: var(--line);
+  border-radius: 9px;
+}
 
-.progress i{height:7px;width:62%;display:block;background:var(--doprep);border-radius:9px}
+.progress i {
+  height: 7px;
+  width: 62%;
+  display: block;
+  background: var(--doprep);
+  border-radius: 9px;
+}

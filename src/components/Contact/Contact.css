@@ -1,11 +1,42 @@
-.contact{padding:60px clamp(24px,5vw,80px);border-bottom:1px solid var(--line)}
+.contact {
+  padding: 60px clamp(24px, 5vw, 80px);
+  border-bottom: 1px solid var(--line);
+}
 
-.contact{background:linear-gradient(110deg,var(--hero),var(--hero-2));color:var(--hero-ink);display:grid;grid-template-columns:1fr 1fr;gap:30px}
+.contact {
+  background: linear-gradient(110deg, var(--hero), var(--hero-2));
+  color: var(--hero-ink);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
 
-.contact p{color:#cbd8fa;font-size:13px}
+.contact p {
+  color: #cbd8fa;
+  font-size: 13px;
+}
 
-.email{display:inline-flex;align-items:center;gap:7px;border:1px solid #7797ca;padding:10px;border-radius:6px;margin-right:8px;font-size:12px}
+.email {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  border: 1px solid #7797ca;
+  padding: 10px;
+  border-radius: 6px;
+  margin-right: 8px;
+  font-size: 12px;
+}
 
-.contact .primary{padding:11px 13px}
+.contact .primary {
+  padding: 11px 13px;
+}
 
-@media(max-width:768px){.contact h2{font-size:36px}.email{margin-bottom:10px;font-size:10px}}
+@media (max-width: 768px) {
+  .contact h2 {
+    font-size: 36px;
+  }
+  .email {
+    margin-bottom: 10px;
+    font-size: 10px;
+  }
+}
