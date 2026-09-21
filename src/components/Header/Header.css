@@ -66,6 +66,15 @@
   font-weight: 600;
 }
 
+.resume-download svg {
+  font-size: 17px;
+  flex: 0 0 auto;
+}
+
+.resume-download.is-started {
+  background: color-mix(in srgb, var(--blue), #11a778 24%);
+}
+
 .menu {
   display: none;
   border: 0;
@@ -92,8 +101,13 @@
     flex-direction: column;
     box-shadow: var(--shadow-sm);
   }
+  .header-actions {
+    gap: 10px;
+  }
   .talk {
-    display: none;
+    padding: 10px 11px;
+    gap: 5px;
+    font-size: 12px;
   }
   .menu {
     display: block;
