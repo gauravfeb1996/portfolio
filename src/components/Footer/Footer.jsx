@@ -15,10 +15,10 @@ export function Footer() {
         <A href="#notes">Notes</A>
       </nav>
       <div>
-        <a href="#top" aria-label="GitHub">
+        <a href="https://github.com/gauravfeb1996" target="_blank" aria-label="GitHub">
           <SiGithub />
         </a>
-        <a href="#top" aria-label="LinkedIn">
+        <a href="https://www.linkedin.com/in/gaurav-verma-1024/" target="_blank" aria-label="LinkedIn">
           <FaLinkedin />
         </a>
       </div>

@@ -20,10 +20,10 @@ export function Contact() {
           <br />
           I’m always open to a good conversation.
         </p>
-        <A className="email" href="mailto:gauravverma.dev@gmail.com">
-          <HiOutlineEnvelope /> gauravverma.dev@gmail.com
+        <A className="email" href="mailto:gaurav.verma.1024@gmail.com">
+          <HiOutlineEnvelope /> gaurav.verma.1024@gmail.com
         </A>
-        <A className="primary" href="mailto:gauravverma.dev@gmail.com">
+        <A className="primary" href="mailto:gaurav.verma.1024@gmail.com">
           Send an email <HiOutlineArrowRight />
         </A>
       </div>
