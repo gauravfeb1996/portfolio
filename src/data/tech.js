@@ -3,7 +3,7 @@ import {
   SiTypescript,
   SiNextdotjs,
   SiRedux,
-  SiVite,
+  SiXyflow,
   SiReactquery,
   SiTailwindcss,
   SiMui,
@@ -11,17 +11,18 @@ import {
   SiJavascript,
   SiGit,
 } from 'react-icons/si';
-import { HiOutlineSparkles } from 'react-icons/hi2';
+import { RiBearSmileFill } from 'react-icons/ri';
+import { ViteIcon } from '../components/Tools/ViteIcon.jsx';
 
 export const tech = [
   ['React', SiReact, '#61DAFB'],
   ['TypeScript', SiTypescript, '#3178C6'],
   ['Next.js', SiNextdotjs, 'var(--tech-dark)'],
   ['Redux Toolkit', SiRedux, '#764ABC'],
-  ['Vite', SiVite, '#646CFF'],
-  ['Zustand', HiOutlineSparkles, '#7B5A3C'],
+  ['Vite', ViteIcon, undefined],
+  ['Zustand', RiBearSmileFill, '#5B3A29'],
   ['React Query', SiReactquery, '#FF4154'],
-  ['React Flow', HiOutlineSparkles, '#FF0072'],
+  ['React Flow', SiXyflow, '#FF0072'],
   ['Tailwind CSS', SiTailwindcss, '#06B6D4'],
   ['Material UI', SiMui, '#007FFF'],
   ['shadcn/ui', SiShadcnui, 'var(--tech-dark)'],
