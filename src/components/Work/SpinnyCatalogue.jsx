@@ -55,8 +55,8 @@ export function SpinnyCatalogue() {
             <span className="step-content">
               <StepIcon />
               <b>{stepLabel}</b>
-              {stepIndex < 3 && <i className="step-connector" aria-hidden="true" />}
             </span>
+            {stepIndex < 3 && <i className="step-connector" aria-hidden="true" />}
           </div>
         ))}
       </div>

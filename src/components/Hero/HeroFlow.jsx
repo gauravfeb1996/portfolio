@@ -14,6 +14,16 @@ export function HeroFlow() {
         <circle cx="425" cy="145" r="4" />
         <circle cx="535" cy="201" r="4" />
       </svg>
+      <svg className="hero-flow-mobile-lines" viewBox="0 0 400 300" aria-hidden="true">
+        <path
+          className="flow-path"
+          d="M128 88 C150 102 142 135 170 146 S215 154 242 143 S275 116 300 140 S340 202 378 192"
+        />
+        <circle cx="128" cy="88" r="3" />
+        <circle cx="202" cy="151" r="3" />
+        <circle cx="300" cy="140" r="3" />
+        <circle cx="378" cy="192" r="3" />
+      </svg>
       <FlowCard
         icon={HiOutlineMagnifyingGlass}
         title="Inspect"

@@ -47,7 +47,7 @@
   position: relative !important;
   align-self: center !important;
   width: 56px !important;
-  height: 2px !important;
+  height: 1px !important;
   margin-left: -14px !important;
   margin-right: -14px !important;
   font-size: 0 !important;
@@ -57,12 +57,13 @@
 .automation > .auto-arrow::after {
   content: "" !important;
   position: absolute !important;
-  right: -1px !important;
+  /* The rotated head ends at the next node's border, never inside it. */
+  right: 6px !important;
   top: 50% !important;
   width: 8px !important;
   height: 8px !important;
-  border-top: 2px solid var(--teal) !important;
-  border-right: 2px solid var(--teal) !important;
+  border-top: 1px solid var(--teal) !important;
+  border-right: 1px solid var(--teal) !important;
   transform: translateY(-50%) rotate(45deg) !important;
 }
 
@@ -237,4 +238,207 @@
   .automation > i {
     font-size: 15px;
   }
+}
+
+/* A grid-based branch keeps every connector attached at every viewport width. */
+.automation {
+  position: relative !important;
+  display: grid !important;
+  grid-template-columns: minmax(130px, 1fr) 48px minmax(125px, 0.95fr) minmax(150px, 1.12fr) !important;
+  align-items: center !important;
+  justify-content: stretch !important;
+  column-gap: 0 !important;
+  row-gap: 0 !important;
+  min-height: 220px !important;
+  padding: 22px !important;
+}
+
+.automation .auto-flow-lines {
+  display: none !important;
+}
+
+.automation > .whats {
+  grid-column: 1 !important;
+}
+
+.automation > .auto-arrow {
+  grid-column: 2 !important;
+  position: relative !important;
+  align-self: center !important;
+  width: 100% !important;
+  height: 2px !important;
+  margin: 0 !important;
+  font-size: 0 !important;
+  background: var(--teal) !important;
+}
+
+.automation > .auto-arrow::after {
+  content: "" !important;
+  position: absolute !important;
+  /* The rotated head ends at the next node's border, never inside it. */
+  right: 6px !important;
+  top: 50% !important;
+  width: 8px !important;
+  height: 8px !important;
+  border-top: 2px solid var(--teal) !important;
+  border-right: 2px solid var(--teal) !important;
+  transform: translateY(-50%) rotate(45deg) !important;
+}
+
+.automation > .identify {
+  grid-column: 3 !important;
+}
+
+.automation .auto-branches {
+  grid-column: 4 !important;
+  position: relative !important;
+  display: grid !important;
+  grid-template-rows: repeat(3, 1fr) !important;
+  gap: 9px !important;
+  min-width: 0 !important;
+  padding-left: 24px !important;
+}
+
+.automation .auto-branches::before {
+  content: "" !important;
+  position: absolute !important;
+  left: 10px !important;
+  top: 25px !important;
+  bottom: 25px !important;
+  display: block !important;
+  border-left: 1px solid var(--teal) !important;
+}
+
+.automation .auto-branches::after {
+  content: "" !important;
+  position: absolute !important;
+  left: 0 !important;
+  top: 50% !important;
+  width: 11px !important;
+  height: 0 !important;
+  border-top: 1px solid var(--teal) !important;
+}
+
+.automation .auto-branch {
+  position: relative !important;
+  display: flex !important;
+  align-items: center !important;
+  min-width: 0 !important;
+  gap: 0 !important;
+}
+
+.automation .auto-branch::before {
+  content: "" !important;
+  position: absolute !important;
+  left: -14px !important;
+  top: 50% !important;
+  display: block !important;
+  width: 14px !important;
+  height: 0 !important;
+  border-top: 1px solid var(--teal) !important;
+}
+
+.automation .auto-branch::after {
+  content: "" !important;
+  position: absolute !important;
+  /* Offset the rotated head by its diagonal so its point meets the border. */
+  left: -9px !important;
+  top: 50% !important;
+  display: block !important;
+  width: 7px !important;
+  height: 7px !important;
+  border-top: 1px solid var(--teal) !important;
+  border-right: 1px solid var(--teal) !important;
+  transform: translateY(-50%) rotate(45deg) !important;
+}
+
+.automation .auto-node {
+  min-width: 0 !important;
+  width: 100% !important;
+}
+
+@media (max-width: 768px) {
+  .automation {
+    grid-template-columns: minmax(82px, 1fr) 28px minmax(82px, 1fr) minmax(95px, 1.13fr) !important;
+    min-height: 200px !important;
+    padding: 14px 10px !important;
+  }
+
+  .automation .auto-branches {
+    gap: 7px !important;
+    padding-left: 16px !important;
+  }
+
+  .automation .auto-branches::before {
+    left: 6px !important;
+    top: 18px !important;
+    bottom: 18px !important;
+  }
+
+  .automation .auto-branches::after {
+    width: 7px !important;
+  }
+
+  .automation .auto-branch::before {
+    left: -10px !important;
+    width: 10px !important;
+  }
+
+  .automation .auto-branch::after {
+    left: -7px !important;
+    width: 5px !important;
+    height: 5px !important;
+  }
+
+  .automation .auto-node {
+    padding: 7px 4px !important;
+    font-size: 7px !important;
+  }
+
+  .automation .auto-node svg {
+    flex: none !important;
+    font-size: 18px !important;
+  }
+}
+
+/* Match the one-pixel node borders so arrows do not dominate the diagram. */
+.automation > .auto-arrow {
+  height: 1px !important;
+}
+
+.automation > .auto-arrow::after {
+  border-top-width: 1px !important;
+  border-right-width: 1px !important;
+}
+
+/* A fractional stroke is visible without competing with the one-pixel boxes. */
+.automation > .auto-arrow {
+  height: 1.5px !important;
+  opacity: 0.84 !important;
+}
+
+.automation > .auto-arrow::after {
+  border-top-width: 1.5px !important;
+  border-right-width: 1.5px !important;
+}
+
+.automation .auto-branches::before,
+.automation .auto-branches::after,
+.automation .auto-branch::before,
+.automation .auto-branch::after {
+  opacity: 0.84 !important;
+}
+
+.automation .auto-branches::before {
+  border-left-width: 1.5px !important;
+}
+
+.automation .auto-branches::after,
+.automation .auto-branch::before {
+  border-top-width: 1.5px !important;
+}
+
+.automation .auto-branch::after {
+  border-top-width: 1.5px !important;
+  border-right-width: 1.5px !important;
 }

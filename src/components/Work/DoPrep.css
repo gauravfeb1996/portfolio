@@ -19,13 +19,13 @@
   color: var(--doprep);
 }
 
-.doprep {
+.doprep.product {
   display: grid;
   grid-template-columns: 135px 1fr;
   overflow: hidden;
 }
 
-.doprep aside {
+.doprep.product aside {
   padding: 16px 10px;
   display: flex;
   flex-direction: column;
@@ -34,14 +34,14 @@
   background: var(--surface-soft);
 }
 
-.doprep aside .active {
+.doprep.product aside .active {
   background: #dfe4ff;
   padding: 5px;
   border-radius: 4px;
   color: var(--doprep);
 }
 
-.doprep main {
+.doprep.product main {
   padding: 18px;
   font-size: 12px;
 }
@@ -75,7 +75,7 @@
   font-size: 8px;
 }
 
-.doprep main p {
+.doprep.product main p {
   font-size: 10px;
   margin-bottom: 5px;
 }

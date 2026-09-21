@@ -13,9 +13,9 @@ body {
   --ink: #0b1b3e;
   --ink-muted: #51627d;
   --line: #d9e2ee;
-  --hero: #071a3b;
-  --hero-2: #0b2452;
-  --hero-ink: #f8fbff;
+  --hero: #f8fdff;
+  --hero-2: #eaf9ff;
+  --hero-ink: #0b1b3e;
   --blue: #246bfd;
   --blue-soft: #eaf1ff;
   --teal: #00a98f;
@@ -42,6 +42,7 @@ body {
   --line: #25405f;
   --hero: #06132a;
   --hero-2: #0a2045;
+  --hero-ink: #f8fbff;
   --blue-soft: #112b5b;
   --teal-soft: #093c38;
   --spinny-soft: #3a1522;
