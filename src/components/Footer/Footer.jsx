@@ -12,7 +12,6 @@ export function Footer() {
       <nav>
         <A href="#work">Work</A>
         <A href="#about">About</A>
-        <A href="#notes">Notes</A>
       </nav>
       <div>
         <a href="https://github.com/gauravfeb1996" target="_blank" aria-label="GitHub">
@@ -22,7 +21,7 @@ export function Footer() {
           <FaLinkedin />
         </a>
       </div>
-      <small>© 2024 Gaurav Verma. All rights reserved.</small>
+      <small>© 2026 Gaurav Verma. All rights reserved.</small>
     </footer>
   );
 }
