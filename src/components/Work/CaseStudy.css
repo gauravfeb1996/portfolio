@@ -30,11 +30,14 @@
 
 .case h2 {
   margin: 8px 0;
+  font-size: clamp(30px, 3vw, 42px);
 }
 
-.case p {
-  font-size: 15px;
-  margin: 10px 0 15px;
+.case .case-context {
+  max-width: 52ch;
+  font-size: 14px;
+  margin: 8px 0 0;
+  color: color-mix(in srgb, var(--ink-muted), transparent 18%);
 }
 
 .case-visual {
@@ -53,11 +56,23 @@
 }
 
 .spinny .handwritten {
-  color: var(--spinny);
+  color: #2e054e;
+}
+
+[data-theme="dark"] .spinny .handwritten {
+  color: #fff;
 }
 
 .brevo .handwritten {
   color: var(--brevo);
+}
+
+.navyug .handwritten {
+  color: #4565aa;
+}
+
+[data-theme="dark"] .navyug .handwritten {
+  color: #a9c2ff;
 }
 
 .product {

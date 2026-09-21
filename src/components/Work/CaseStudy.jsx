@@ -14,7 +14,7 @@ export function CaseStudy({ caseStudy }) {
           {num} / {company}
         </Label>
         <h2>{title}</h2>
-        <p>{desc}</p>
+        <p className="case-context">{desc}</p>
         <RoleOutcome role={role} outcome={outcome} />
         <CaseHighlights tone={tone} number={num} />
       </div>

@@ -38,9 +38,9 @@ export function CaseHighlights({ tone, number }) {
             [HiOutlineCheckCircle, '100K+ users'],
           ]
         : [
-            [HiOutlineAcademicCap, 'Practice-first'],
-            [HiOutlineChartBar, 'Progress tracking'],
-            [HiOutlineUserGroup, 'Guidance in one place'],
+            [HiOutlineAcademicCap, 'Client discovery'],
+            [HiOutlineUserGroup, 'Team delivery'],
+            [HiOutlineCheckCircle, 'Launch & support'],
           ];
 
   return (

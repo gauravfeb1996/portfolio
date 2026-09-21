@@ -4,13 +4,13 @@ import './RoleOutcome.css';
 export function RoleOutcome({ role, outcome }) {
   return (
     <div className="case-meta">
-      <div>
-        <Label>My role</Label>
-        <span>{role}</span>
+      <div className="case-work">
+        <Label>My work</Label>
+        <strong>{role}</strong>
       </div>
-      <div>
+      <div className="case-outcome">
         <Label>Outcome</Label>
-        <span>{outcome}</span>
+        <strong>{outcome}</strong>
       </div>
     </div>
   );

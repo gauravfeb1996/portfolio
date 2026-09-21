@@ -1,37 +1,30 @@
-[data-theme="dark"] .spinny-logo {
-  filter: brightness(0) invert(1) !important;
-  opacity: 0.96 !important;
-}
-
-[data-theme="dark"] .case .spinny-logo {
-  filter: brightness(0) invert(1) !important;
-  opacity: 1 !important;
-}
-
-html[data-theme="dark"] body .case .company .spinny-logo {
-  filter: brightness(2.7) saturate(1.7) contrast(1.1)
-    drop-shadow(0 1px 1px rgba(255, 255, 255, 0.42)) !important;
-}
-
-[data-theme="dark"] .spinny-logo,
 .spinny-logo {
-  mix-blend-mode: normal !important;
-  filter: none !important;
+  mix-blend-mode: normal;
+  filter: none;
 }
 
-[data-theme="dark"] .spinny-logo {
-  filter: brightness(2.1) saturate(1.6);
+.spinny-logo-set {
+  display: inline-flex;
+  align-items: center;
 }
 
-.spinny-logo {
-  mix-blend-mode: multiply;
+.brand-logo.spinny-logo-dark {
+  display: none;
+}
+
+[data-theme="dark"] .brand-logo.spinny-logo-light {
+  display: none;
+}
+
+[data-theme="dark"] .brand-logo.spinny-logo-dark {
+  display: block;
 }
 
 .spinny-logo {
   width: 112px !important;
   height: 32px !important;
   max-width: none !important;
-  object-fit: cover !important;
+  object-fit: contain !important;
 }
 
 .company {
@@ -74,10 +67,34 @@ html[data-theme="dark"] body .case .company .spinny-logo {
   font-size: 24px;
 }
 
+.company-link {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 4px;
+}
+
+.company-link:focus-visible {
+  outline: 2px solid var(--blue);
+  outline-offset: 4px;
+}
+
+.navyug-logo {
+  /* Match the visual cap height of the Spinny and Brevo wordmarks. */
+  width: 128px;
+  height: 42px;
+  max-width: none;
+  object-fit: contain;
+  object-position: left center;
+}
+
 @media (max-width: 768px) {
   .brand-logo {
     height: 24px;
     max-width: 102px;
+  }
+  .navyug-logo {
+    width: 102px;
+    height: 34px;
   }
   .doprep-lockup {
     font-size: 18px;
