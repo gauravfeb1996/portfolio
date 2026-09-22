@@ -74,12 +74,12 @@
 }
 
 .project-card.mobile {
-  left: 26%;
-  top: 47px;
-  width: 48%;
-  height: 186px;
+  left: 28%;
+  top: 42px;
+  width: 44%;
+  height: 196px;
   transform: rotate(1.5deg);
-  z-index: 1;
+  z-index: 3;
 }
 
 .project-card.mobile img {
@@ -111,9 +111,10 @@
   }
 
   .project-card.mobile {
-    left: 25%;
-    top: 43px;
-    width: 50%;
-    height: 174px;
+    left: 27%;
+    top: 38px;
+    width: 46%;
+    height: 184px;
+    z-index: 3;
   }
 }
