@@ -4,20 +4,20 @@ const projects = [
   {
     name: 'Role-based learning',
     detail: 'AI learning platform',
-    image: '/projects/role-learning.png',
+    image: '/projects/learning-concept.png',
     className: 'learning',
   },
   {
     name: 'Assessment reporting',
     detail: 'Performance dashboard',
-    image: '/projects/assessment-report.png',
+    image: '/projects/reporting-concept.png',
     className: 'assessment',
   },
   {
-    name: 'Zaky',
-    detail: 'Family care app',
-    image: '/projects/zaky.webp',
-    className: 'zaky',
+    name: 'Mobile app',
+    detail: 'Family care experience',
+    image: '/projects/mobile-concept.png',
+    className: 'mobile',
   },
 ];
 
@@ -27,7 +27,7 @@ export function NavyugProjects() {
       <div className="project-kicker">Client product delivery</div>
       {projects.map(({ name, detail, image, className }) => (
         <article className={`project-card ${className}`} key={name}>
-          <img src={image} alt={`${name} product screen`} />
+          <img src={image} alt={`${name} illustrative product concept`} />
           <footer>
             <b>{name}</b>
             <span>{detail}</span>

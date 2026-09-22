@@ -55,6 +55,29 @@
   z-index: 2;
 }
 
+.handwritten::before,
+.handwritten::after {
+  content: "";
+  position: absolute;
+  border-top: 2px solid currentColor;
+  opacity: 0.9;
+  transform-origin: right center;
+}
+
+.handwritten::before {
+  right: 12px;
+  bottom: -15px;
+  width: 34px;
+  transform: rotate(-28deg);
+}
+
+.handwritten::after {
+  right: 1px;
+  bottom: -25px;
+  width: 27px;
+  transform: rotate(-36deg);
+}
+
 .spinny .handwritten {
   color: #2e054e;
 }

@@ -62,5 +62,10 @@
 
   .engineering-impact-card {
     min-height: 0;
+    padding: 18px;
   }
+
+  .engineering-impact-card h3 { margin-top: 12px; }
+
+  .engineering-impact-card p { font-size: 13px; }
 }

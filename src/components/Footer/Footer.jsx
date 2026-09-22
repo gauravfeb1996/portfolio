@@ -21,7 +21,7 @@ export function Footer() {
           <FaLinkedin />
         </a>
       </div>
-      <small>© 2026 Gaurav Verma. All rights reserved.</small>
+      <small>© 2026 Gaurav Verma. All rights reserved. Product visuals are original illustrative concepts, not client product screenshots.</small>
     </footer>
   );
 }

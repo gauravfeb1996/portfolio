@@ -4,7 +4,7 @@ export function Phones() {
   return (
     <div className="phones">
       <div className="phone">
-        <b>◆ Spinny</b>
+        <b>◆ Truebil</b>
         <h4>Welcome back!</h4>
         <small>Enter your phone number to get started</small>
         <input value="+91 98765 43210" readOnly />

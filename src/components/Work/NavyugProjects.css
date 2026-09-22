@@ -56,34 +56,34 @@
 }
 
 .project-card.learning {
-  left: 7%;
-  top: 53px;
-  width: 51%;
-  height: 182px;
+  left: 6%;
+  top: 60px;
+  width: 49%;
+  height: 180px;
   transform: rotate(-4deg);
-  z-index: 1;
+  z-index: 0;
 }
 
 .project-card.assessment {
-  right: 8%;
-  top: 68px;
-  width: 48%;
-  height: 174px;
+  right: 6%;
+  top: 60px;
+  width: 49%;
+  height: 180px;
   transform: rotate(4deg);
   z-index: 2;
 }
 
-.project-card.zaky {
-  left: 38%;
-  top: 39px;
-  width: 25%;
-  height: 208px;
+.project-card.mobile {
+  left: 26%;
+  top: 47px;
+  width: 48%;
+  height: 186px;
   transform: rotate(1.5deg);
-  z-index: 3;
+  z-index: 1;
 }
 
-.project-card.zaky img {
-  object-position: center 34%;
+.project-card.mobile img {
+  object-position: center center;
 }
 
 @media (max-width: 768px) {
@@ -98,22 +98,22 @@
 
   .project-card.learning {
     left: 6%;
-    top: 45px;
-    width: 55%;
-    height: 160px;
+    top: 50px;
+    width: 53%;
+    height: 166px;
   }
 
   .project-card.assessment {
     right: 6%;
-    top: 61px;
-    width: 51%;
-    height: 154px;
+    top: 50px;
+    width: 53%;
+    height: 166px;
   }
 
-  .project-card.zaky {
-    left: 39%;
-    top: 37px;
-    width: 26%;
-    height: 179px;
+  .project-card.mobile {
+    left: 25%;
+    top: 43px;
+    width: 50%;
+    height: 174px;
   }
 }
