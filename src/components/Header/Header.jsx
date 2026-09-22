@@ -29,8 +29,8 @@ export function Header({ theme, setTheme }) {
         </button>
         <a
           className={resumeStarted ? 'talk resume-download is-started' : 'talk resume-download'}
-          href="/Gaurav_Verma_Resume_Revised_v5.pdf"
-          download="Gaurav_Verma_Resume_Revised_v5.pdf"
+          href="/Gaurav_Verma_Resume.pdf"
+          download="Gaurav_Verma_Resume.pdf"
           onClick={() => setResumeStarted(true)}
         >
           <span>Download Resume</span>
